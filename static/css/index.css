@@ -24,7 +24,7 @@ margin: -160px auto 0;border-radius: 100%;}
 .section-about {display: none;text-align: center; justify-content: center;}
 .box-about-item{width: 80%; background-color: #f5fce9; padding: 5px;}
 .box-about-flex{display: flex; justify-content: center;}
-.garen {width: 200px; height: 280px;}
+.title-about{text-transform: uppercase; font-size: 26px;}
 
 /* BOX-PROJECTS */
 .box-projects{display:none}
