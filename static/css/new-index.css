@@ -41,7 +41,7 @@ line-height: 1em;max-width: 100%;min-width: 140px;padding: 3px;text-decoration: 
 /* BOX-ABOUT */
 .paragraph {text-align: justify;}
 .case-paragraph {margin-top: 20px;}
-.paragraph-item {width: 80%;border: 1px solid black;padding: 14px;border-radius: 13px;}
+.paragraph-item {width: 90%;border: 1px solid black;padding: 14px;border-radius: 13px;}
 .button-about1 {min-width: 190px;height: 100px; margin-right: 5px;}
 .button-about2 {min-width: 190px;height: 100px;}
 .button-about-item {width: 180px;height: 50px;}
@@ -57,7 +57,7 @@ line-height: 1em;max-width: 100%;min-width: 140px;padding: 3px;text-decoration: 
 
 
 /* FOOTER */
-.flex-foot {height: auto; display: flex; align-items: flex-end; margin-top: 50px;}
+.flex-foot {height: auto; display: flex; align-items: flex-end; margin-top: 30px;}
 .foot {background-color: rgb(247, 241, 241); width: 100%; height: 130px; text-align: center; padding-top: 1em;}
 
 .redes {width: 100%; text-align: center; display: flex; justify-content: center;}
