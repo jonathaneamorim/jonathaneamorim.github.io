@@ -105,7 +105,7 @@ header {
 }
 .tell-list {
     list-style-type: none;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 .tell-list li a {
     text-decoration: none;
