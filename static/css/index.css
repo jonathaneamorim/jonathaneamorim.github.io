@@ -89,14 +89,13 @@ html, body {
     text-align: center;
     width: 130px;
     border-radius:15px;
-    background: #fff;
+    background: whitesmoke;
     border: 2px solid  black;
     letter-spacing:1px;
     text-shadow:0;
     font-weight: bold;
 }
 .button:hover {
-    background-color: whitesmoke;
     transition: 0.5s;
     color: black;
     border: 2px solid greenyellow;
@@ -116,7 +115,6 @@ html, body {
 .tell-list {
     list-style-type: none;
     display: inline-flex;
-
 }
 .tell-item {
     margin: 15px;
