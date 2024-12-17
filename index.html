@@ -10,40 +10,34 @@
 
     <title>Jonathan Amorim</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.3/src/app/ci.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16x16.png">
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <!-- Page Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
 
+    <!-- Font Saira Condensed -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
-
-    <link rel="manifest" href="static/images/site.webmanifest">
     <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 
-    <nav id="home" style="display: flex; justify-content: space-around; height: 10vh; align-items: center;">
-        <div style="">
+    <nav>
+        <div>
             <h1 class="profile-name">Jonathan Amorim</h1>
-            <p style="margin: 0; padding: 0; text-align: center;">Desenvolvedor FullStack</p>
+            <p>Desenvolvedor FullStack</p>
         </div>
 
-        <div style="">
-            <ul style="display: flex; list-style-type: none; gap: 100px; margin: 0; padding: 0;">
+        <div class="nav-menu">
+            <ul>
                 <li class="nav-list-item"><a href="#home">Home</a></li>
                 <li class="nav-list-item"><a href="#trajetoria">Trajetória</a></li>
                 <li class="nav-list-item"><a href="#qualificacoes">Qualificações</a></li>
@@ -54,33 +48,33 @@
     </nav>
 
 
-    <section style="display: flex; height: 90vh; align-items: center;">
+    <section class="section-home">
 
         <div class="profile-box">
             <div class="profile-info">
-                <h1>Olá! Me chamo Jonathan Emmanuel</h1>
-                <p style="font-size: 18px;">Sou estudante em Análise e desenvolvimento de sistemas e Desenvolvedor Web
-                    Full Stack</p>
+                <div>
+                    <img class="profile-image" src="https://avatars.githubusercontent.com/u/94270784?s=400&u=712420745f17b4d0506bdc6218988ffee9e42f0d&v=4" alt="foto de perfil">
+                </div>
+                <div>
+                    <h1>Olá! Me chamo Jonathan Emmanuel</h1>
+                    <p>Sou estudante em Análise e desenvolvimento de sistemas e Desenvolvedor Web Full Stack</p>
+                </div>
             </div>
         </div>
 
-        <div style="width: 50%; align-items: center; display: flex; flex-direction: column;">
-            <div style="margin: 30px;">
+        <div class="resume-box">
+            <div>
                 <p>Resumo</p>
-                <p style="font-size: 18px;">Sou formado em Técnico em Informática pelo IFC (2022), com sólidos
+                <p>Sou formado em Técnico em Informática pelo IFC (2022), com sólidos
                     conhecimentos em lógica de programação e programação orientada a objetos. Desenvolvo Backend com
                     .NET/C# (Entity Framework) e Frontend com HTML, CSS e JavaScript, além de ter familiaridade com
                     frameworks como Angular e Vue.js. Também possuo conhecimentos em Java com Spring Boot (Entra21) e em
                     SQL com banco de dados PostgreSQL.</p>
             </div>
-
-            <div class="curriculo p-2">
-                <ul style="display: flex; list-style-type: none; gap: 100px; margin: 0; padding: 0;">
-                    <li><a href="#contato"
-                            style="background: #15E49A; text-decoration: none; padding: 5px 20px 5px 20px; color: black; font-size: 18px;">Contato</a>
-                    </li>
-                    <li><a href=""
-                            style="background: #15E49A; text-decoration: none; padding: 5px 20px 5px 20px; color: black; font-size: 18px;">Download CV</a></li>
+            <div>
+                <ul>
+                    <li><a href="#contato" class="green-button-link">Contato</a></li>
+                    <li><a href="docs/WebCurriculo.pdf" target="_self" class="green-button-link">Download CV</a></li>
                 </ul>
             </div>
 
@@ -88,12 +82,15 @@
 
     </section>
 
-    <section id="trajetoria" style="height: 100vh; width: 100%; background: #202020;">
+    <section class="section-trajetoria" id="trajetoria">
+
+        <div class="section-trajetoria-title">
+            <h1>Minha Trajetória profissional</h1>
+        </div>
 
         <section class="design-section">
 
             <div class="timeline">
-
                 
                 <div class="timeline-empty">
                 </div>
@@ -104,12 +101,15 @@
 
                 <div class="timeline-component timeline-content">
                     <h3>2024</h3>
-                    <p>Realizei o curso de 220 horas em Desenvolvimento Back-end - Java oferecido pela Blusoft. Consegui meu primeiro emprego na área da tecnologia como testador de software</p>
+                    <p>Realizei o curso de 220 horas em Desenvolvimento Back-end - Java oferecido pela Blusoft (Entra21). 
+                        Consegui meu primeiro emprego na área da tecnologia como testador de software.
+                        Também iniciei meu curso superior em tecnologia com Análise e Desenvolvimento de Sistemas (ADS)
+                    </p>
                 </div>
 
                 <div class="timeline-component timeline-content">
                     <h3>2022</h3>
-                    <p>Finalizei o curso técnico integrado, assim consolidando meus conhecimentos em desenvolvimento web</p>
+                    <p>Finalizei o curso técnico integrado, assim consolidando meus conhecimentos em desenvolvimento web. No mesmo ano também realizei diversos cursos no âmbito do Desenvolvimento Web.</p>
                 </div>
 
                 <div class="timeline-middle">
@@ -132,100 +132,116 @@
 
             </div>
             </div>
-
         </section>
-
     </section>
 
 
-    <section id="qualificacoes" style="height: 100vh; width: 100%; display: flex; align-items: center; flex-direction: column;">
-        <div style="width: 100%; height: 10vh; display: flex; justify-content: center; align-items: center;">
+    <section class="section-qualificacoes" id="qualificacoes">
+        <div class="section-qualificacoes-title">
             <h1>Minhas Habilidades e experiências</h1>
         </div>
 
-        <div style="width: 100%; height: 90vh; display: flex; flex-wrap: wrap; gap: 50px; align-items: center; justify-content: center;">
+        <div class="section-qualificacoes-box">
             <div class="stack-blocks">
                 <h1>Desenvolvimento Frontend</h1>
-                <p>Habilidade de criar páginas completas e responsivas de acordo com as demandas. Bootstrap, angular, vue</p>
+                <p>Habilidade de criar páginas completas e responsivas de acordo com as demandas. 
+                    Possuo conhecimentos no framework Bootstrap.
+                    Também possuo base nos frameworks Angular e VueJs.</p>
             </div>
             <div class="stack-blocks">
                 <h1>Desenvolvimento Backend</h1>
-                <p>Possuo sólido conhecimento em desenvolvimento Web nas linguagens C# e Java utilizando os frameworks de desenvolvimento EntityFramework(C#) e SpringBoot(Java). Capaz de criar APIs RESTFul e realizar o consumo de outras APIs. Conhecimento em ORM(Object-Relational Mapping)...</p>
+                <p>Possuo sólido conhecimento em desenvolvimento Web nas linguagens C# e Java utilizando os 
+                    frameworks de desenvolvimento EntityFramework(C#) e SpringBoot(Java). 
+                    Capaz de criar APIs RESTFul e realizar o consumo de outras APIs. 
+                    Tenho a capacidade de criar tabelas através de ORM de acordo com o framework utilizado.
+                </p>
             </div>
 
             <div class="stack-blocks">
                 <h1>Banco de Dados - SQL</h1>
-                <p>Com experiência profissional utilizando PostgreSQL, possuo habilidade de realizar alterações e consultas em banco de dados utilizando SQL. Também tenho conhecimento em integração de banco de dados com aplicação Backend.</p>
+                <p>Com experiência profissional utilizando PostgreSQL, possuo habilidade de realizar alterações e 
+                    consultas em banco de dados utilizando SQL. Também tenho conhecimento em integração de banco de 
+                    dados com aplicação Backend.</p>
             </div>
 
             <div class="stack-blocks">
                 <h1>Scrum | Kanban</h1>
-                <p>Possuo experiência profissional e vivência com as metodologias Scrum e Kanban. Realizava plannings e dailys e realizava minhas tarefas através de cartões determinados no inicio do Sprint.</p>
+                <p>Possuo experiência profissional e vivência com as metodologias Scrum e Kanban. Conhecimento na realização de plannings 
+                    e dailys e realização de tarefas através de cartões determinados no inicio do Sprint.</p>
             </div>
             <div class="stack-blocks">
                 <h1>Git | GitHub</h1>
-                <p>Possuo sólido conhecimento na ferramenta de versionamento GIT, o qual sou capaz de realizar versionamentos através de branchs para a realização de Code Review no Github.</p>
+                <p>Possuo sólido conhecimento na ferramenta de versionamento GIT, sendo capaz de realizar versionamentos 
+                    através de branchs para a realização de Code Review no Github.</p>
             </div>
 
             <div class="stack-blocks">
                 <h1>Testes de Software</h1>
-                <p>Tenho experiência com o planejamento, roteiro e teste de software, o qual verificava a integridade do sistema após as alterações dos DEVs e realizava a garantia de qualidade do produto. Como parte do processo também realizava atendimento ao cliente quando necessário.</p>
+                <p>Tenho experiência com o planejamento, roteiro e teste de software, o qual verificava a integridade do 
+                    sistema após as alterações dos DEVs e realizava a garantia de qualidade do produto. Como 
+                    parte do processo também realizava atendimento ao cliente quando necessário.</p>
             </div>
         </div>
     </section>
 
 
-    <section id="projetos" style="height: 100vh; width: 100%; background: #202020;">
-        <div style="width: 100%; height: 15vh; display: flex; justify-content: center; align-items: center; margin: 0; padding: 0;">
+    <section class="section-projects" id="projetos">
+        <div class="section-projects-title">
             <h1>Meus projetos pessoais</h1>
         </div>
 
-        <div style="width: 100%; height: 85vh; display: flex; align-items: center;justify-content: center; gap: 100px;">
+        <div class="section-projects-box">
             <div class="card-block">
                 <h1>Portal Estudantil</h1>
-                <p>Projeto de apoio discente, comunicação e suporte em disciplinas do ensino médio.</p>
-                <a style="background: #15E49A; text-decoration: none; padding: 5px 20px 5px 20px; color: black; font-size: 18px;" href="">Visitar</a>
+                <p>Projeto de Apoio ao Discente: Iniciativa voltada para a comunicação e suporte em disciplinas do 
+                    ensino médio, desenvolvida durante o curso técnico integrado ao ensino médio. O projeto foi realizado 
+                    em colaboração com colegas, promovendo o trabalho em equipe e o desenvolvimento de soluções para 
+                    auxiliar estudantes no acompanhamento e compreensão das matérias escolares.
+                </p>
+                <a class="green-button-link" href="https://0neocortexx.pythonanywhere.com/">Visitar</a>
             </div>
             <div class="card-block">
                 <h1>The House</h1>
 
                 <p>O The House é um sistema desenvolvido para facilitar a gestão financeira e organizacional de uma residência. Sua principal função é permitir o controle eficiente de despesas e atividades domésticas, oferecendo uma solução centralizada para diversos aspectos do dia a dia.
                     Com o The House, será possível monitorar contas fixas (como luz, água, telefone, gás) e despesas periódicas (como cartão de crédito e compras pontuais), ajudando a visualizar e planejar os custos de maneira mais precisa.</p>
+                <p>Projeto em construção ...</p>
 
-                <a style="background: #15E49A; text-decoration: none; padding: 5px 20px 5px 20px; color: black; font-size: 18px;" href="">Visitar</a>
+                <a class="green-button-link" href="https://github.com/jonathaneamorim/TheHouse-C-Sharp/blob/main/README.md">Visitar</a>
             </div>
             <div class="card-block">
                 <h1>Project Flag</h1>
-                <p>Web game desenvolvido em equipe no curso técnico de informática do instituto federal com desafios envolvendo segurança computacional e raciocínio lógico!</p>
-                <a style="background: #15E49A; text-decoration: none; padding: 5px 20px 5px 20px; color: black; font-size: 18px;" href="https://projectflag.pythonanywhere.com/">Visitar</a>
+                <p>Web Game Educacional: Desenvolvido em equipe durante o curso técnico de Informática no Instituto Federal, o 
+                    projeto propôs desafios interativos focados em segurança computacional e raciocínio lógico. A iniciativa 
+                    foi realizada em colaboração com colegas, aplicando os conhecimentos adquiridos nas disciplinas de 
+                    programação e segurança computacional.
+                </p>
+                <a class="green-button-link" href="https://projectflag.pythonanywhere.com/">Visitar</a>
             </div>
         </div>
 
     </section>
 
-    <section id="contato" style="width: 100%; height: 30vh;">
-        <div style="height: 20%; display: flex; align-items: center; justify-content: center; padding: 40px;">
-            <h1 style="margin: 0; padding: 0;">Contatos</h1>
+    <section class="section-contato" id="contato">
+        <div class="section-contato-title">
+            <h1>Contatos</h1>
         </div>
 
-        <div style="height: 65%; width: 100%; display: flex; align-items: center; justify-content: center;">
-            <ul style="display: flex; list-style-type: none; margin: 0; padding: 0; gap: 100px;">
-                <li class="contact-block-item"><a href="https://www.linkedin.com/in/jonathanamorim/"><img class="icon-contact" src="static/images/linkedin.svg" alt="Linkedin"><p>Linkedin</p></a></li>
-                <li class="contact-block-item"><a href="https://github.com/jonathaneamorim"><img class="icon-contact" src="static/images/github.svg" alt="Github"><p>Github</p></a></li>
-                <li class="contact-block-item"><a href="http://wa.me/47991291070"><img class="icon-contact" src="static/images/whatsapp.svg" alt="Telefone"><p>Whatsapp</p></a></li>
-                <li class="contact-block-item"><a href="mailto:jonathanemmanueldeoliveira2003@gmail.com?subject=Contato&body=Olá, gostaria de falar com você!" target="_blank"><img class="icon-contact" src="static/images/gmail.svg" alt="Email"><p>Email</p></a></li>
+        <div class="section-contato-box">
+            <ul>
+                <li class="contact-block-item"><a href="https://www.linkedin.com/in/jonathanamorim/"><img class="icon-contact" src="images/linkedin.svg" alt="Linkedin"><p>Linkedin</p></a></li>
+                <li class="contact-block-item"><a href="https://github.com/jonathaneamorim"><img class="icon-contact" src="images/github.svg" alt="Github"><p>Github</p></a></li>
+                <li class="contact-block-item"><a href="http://wa.me/47991291070"><img class="icon-contact" src="images/whatsapp.svg" alt="Telefone"><p>Whatsapp</p></a></li>
+                <li class="contact-block-item"><a href="mailto:jonathanemmanueldeoliveira2003@gmail.com?subject=Contato&body=Olá, gostaria de falar com você!" target="_blank"><img class="icon-contact" src="images/gmail.svg" alt="Email"><p>Email</p></a></li>
             </ul>
         </div>
 
-        <footer style="height: 15%; display: flex; align-items: center; justify-content: center;">
-            <h3 style="font-size: 18px; margin: 0; padding: 0;">Desenvolvido por Jonathan Emmanuel</h3>
+        <footer>
+            <h3>© 2024 | Desenvolvido por Jonathan Emmanuel</h3>
         </footer>
     </section>
 
     <script src="static/js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
-
 </html>
