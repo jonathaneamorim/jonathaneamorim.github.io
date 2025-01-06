@@ -257,7 +257,7 @@ nav p {
 
 .section-projects-title {
     width: 100%; 
-    height: 15vh; 
+    height: 10vh; 
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -282,12 +282,13 @@ nav p {
 .card-block {
     background: #050505;
     width: 27%;
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
+    gap: 20px;
 }
 
 /* ----- SECTION CONTATO ----- */
@@ -352,4 +353,28 @@ footer h3 {
     font-size: 18px; 
     margin: 0; 
     padding: 0;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.list a {
+    background: #15E49A; 
+    text-decoration: none; 
+    padding: 10px 20px 10px 20px; 
+    color: black; 
+    font-size: 18px;
+    display: flex;
+}
+
+.list a li {
+    width: 100%;
+    height: 100%;
 }
